@@ -16088,5 +16088,22 @@ section:nth-of-type(3) .col-4 .minimal {
   align-items: center;
   margin-top: 20px;
 }
+section:nth-of-type(4) {
+  background-image: url("../../public/img/cta-bg.jpg");
+  background-position: center;
+  height: 800px;
+}
+section:nth-of-type(4) .text-center {
+  padding: 350px 0px;
+}
+section:nth-of-type(4) .text-center h1 {
+  font-size: 4em;
+  margin-bottom: 40px;
+}
+section:nth-of-type(4) .text-center button {
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
