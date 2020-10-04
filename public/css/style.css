@@ -16115,6 +16115,9 @@ section:nth-of-type(5) .carou button {
   border-radius: 100%;
   margin: 2px;
 }
+section:nth-of-type(6) {
+  padding-bottom: 50px;
+}
 section:nth-of-type(6) .row .num1 {
   background-color: #f3f3f3;
 }
@@ -16124,6 +16127,17 @@ section:nth-of-type(6) .row .num3 {
 section:nth-of-type(6) .row button {
   border: none;
   padding: 10px 5px;
+}
+
+footer button {
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+footer .last {
+  background-color: black;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
