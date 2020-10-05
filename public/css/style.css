@@ -16015,6 +16015,11 @@ body {
   margin: 0;
 }
 
+header #navbar-brand {
+  font-size: 40px;
+  margin-left: 70px;
+  margin-bottom: 15px;
+}
 header .navbar-nav .ul1 {
   list-style: none;
 }
@@ -16043,6 +16048,17 @@ section:first-of-type {
   background-color: #f3f3f3;
   margin-top: 50px;
 }
+section:first-of-type #form button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+section:first-of-type #panel .num1 {
+  margin-bottom: 11em;
+}
+section:first-of-type #panel .num1 #croix {
+  margin-left: 15em;
+}
 section:first-of-type .row {
   align-items: center;
 }
@@ -16070,6 +16086,7 @@ section:nth-of-type(2) .row .num1 {
   display: flex;
   justify-content: center;
   background-position: center;
+  background-repeat: no-repeat;
   height: 200px;
   width: 100%;
 }
@@ -16080,6 +16097,7 @@ section:nth-of-type(2) .row .num2 {
   background-image: url("../../public/img/services/service-2.jpg");
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
   background-position: center;
   height: 200px;
   width: 100%;
@@ -16091,6 +16109,7 @@ section:nth-of-type(2) .row .num3 {
   background-image: url("../../public/img/services/slider-3.jpg");
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
   background-position: center;
   height: 200px;
   width: 100%;

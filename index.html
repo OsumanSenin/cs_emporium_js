@@ -11,57 +11,113 @@
 <body>
 
     <!-- barre de Navigation -->
-<header>
-    <div class="nav-bar">
-       <div>
-           <h1 class="text-center bolder">emporium .</h1>
-       </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand d-none" href="#">emporium</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-
-                    <a class="nav-link " href="#"> HOME</a>
-                    <a class="nav-link" href="#">PRODUCT</a>
-                    <a class="nav-link" href="#">BLOG</a>
-                    <a class="nav-link" href="#">ELEMENTS</a>
-                    <a class="nav-link " href="#">ABOUT</a>
-                    <a class="nav-link " href="#">CONTACT</a>
-                    <ul class="ul1">
-                        <li><button class="btn1"></button>
-                            <button class="btn2"></button>
-                            <button class="conexion">conexion</button>
-                        </li>
-                    </ul>
-
-
-                </div>
+    <header>
+        <div class="nav-bar" >
+            <div id="title">
+                <h1 id="h1" class="text-center bolder">emporium .</h1>
             </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white" id="nav1">
+                <a class="navbar-brand d-none text-dark" id="navbar-brand" href="#">emporium</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
 
-    </div>
+                        <a class="nav-link " href="#"> HOME</a>
+                        <a class="nav-link" href="#">PRODUCT</a>
+                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="#">ELEMENTS</a>
+                        <a class="nav-link " href="#">ABOUT</a>
+                        <a class="nav-link " href="#">CONTACT</a>
+                        <ul class="ul1">
+                            <li><button class="btn1"></button>
+                                <button class="btn2"></button>
+                                <button class="conexion">conexion</button>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
     </header>
     <!-- debut de la premiere section  -->
     <section id="section1">
-        <div class="container">
-        <div class="row">
-            <div class="col-7 num1">
-                <h3 class="text-danger">Shop at</h3>
-                <div>
-                    <img src="./public/img/logo.png" alt="" srcset="">
+        <div id="panel" class="text-center d-none p-5">
+            <div class="row">
+                <div class="col-6 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="p-3">
+                        <h1 class="text-uppercase text-center pt-3" id="signUp">
+                            <a href="" class="text-dark">Sign up</a></h1>
+
+                    </div>
+                    <div class="form-group d-flex flex-column" id="form">
+
+                        <input type="email" placeholder="Email Adress" class="mb-3">
+                        <input type="password" placeholder="Password" class="mb-3">
+                        <div>
+                            <button class="bg-info mb-3 px-4 text-white">Sign up</button>
+
+                        </div>
+                        <div>
+                            <button class="text-white bg-danger mb-3 px-5"><i class="fab fa-google"></i> Connect with
+                                Google</button>
+
+
+                            <button class="text-white bg-primary px-5"><i class="fab fa-facebook-f"></i> Connect with
+                                Facebook</button>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nemo aut illo enim similique velit.
-                    <br> Lorem ipsum dolor sit amet.</p>
-                <button class="bg-danger">SALE ITEMS</button>
+
+                <div class="num1 col-6 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                    <div id="croix"><a href=""><i class="far fa-times-circle"></i></a></div>
+                    <h1 class="text-uppercase text-center pt-2" id="register">
+                        <a href="" class="text-dark">Register</a>
+                    </h1>
+                    <div id="sous-panel" class="d-none">
+
+                        <div class="d-flex mb-3">
+                            <input type="text" placeholder="First Name" class="w-50 mr-3"><input type="text"
+                                placeholder="Last Name" class="w-50">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-100 mb-4">
+                        <div class="d-flex">
+                            <input type="password" placeholder="Password" class="w-50 mr-4"><input type="password"
+                                placeholder="Confirm Password" class="w-50">
+                        </div>
+                        <div class="d-flex justify-content-start">
+
+                            <button class="bg-info text-white mt-3 w-50">Register</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-5"><img src="./public/img/slider-1.jpg" alt="" srcset="">
+
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 num1">
+                    <h3 class="text-danger">Shop at</h3>
+                    <div>
+                        <img src="./public/img/logo.png" alt="" srcset="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nemo aut illo enim similique
+                        velit.
+                        <br> Lorem ipsum dolor sit amet.</p>
+                    <button class="bg-danger">SALE ITEMS</button>
+                </div>
+                <div class="col-5 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5"><img src="./public/img/slider-1.jpg" alt="" srcset="">
+                </div>
             </div>
         </div>
-    </div>
 
     </section>
 
@@ -69,18 +125,18 @@
     <section id="section2">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4 ">
-                    <div class="num1">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                    <div class="num1 my-2">
                         <h1 class="text-white pt-5">Living Room </h1>
                     </div>
                 </div>
-                <div class="col-4 ">
-                    <div class="num2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                    <div class="num2 my-2">
                         <h1 class="text-white pt-5">Sale Items</h1>
                     </div>
                 </div>
-                <div class="col-4 ">
-                    <div class="num3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                    <div class="num3 my-2">
                         <h1 class="text-white pt-5">Cloaths</h1>
                     </div>
                 </div>
@@ -89,160 +145,160 @@
 
     </section>
 
-                        <!-- section 3  -->
+    <!-- section 3  -->
 
 
 
 
 
 
-                        <section id="section3">
-                            <div class="container">
-                                <h1 class="font-weight-bold text-center mb-5">Recents Products</h1>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="minimal flex-column mx-5">
-                                                <p class="font-weight-bold">Luxury Sofa</p>
-                                                <span class="text-danger"> $600.00</span>
-                                                </div>
-                            
-                                        </div>
-                            
-                            
-                                    </div>
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center m-4">
-                                            <button class="text-white bg-danger">SALE!</button>
-                                            <div class="flex-column mx-5">
-                                            <p class="font-weight-bold">Leather Glaves</p>
-                                            <span class="text-danger"><del class="text-secondary">$34.00</del> $27.00</span>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-cups.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="minimal flex-column mx-5">
-                                                <p class="font-weight-bold">Colorful Bowl</p>
-                                                <span class="text-danger"> $18.00</span>
-                                                </div>
-                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center m-4">
-                                            <button class="text-white bg-danger">SALE!</button>
-                                            <div class="flex-column mx-5">
-                                            <p class="font-weight-bold">Women Bag</p>
-                                            <span class="text-danger"><del class="text-secondary">$420.00</del> $300.00</span>
-                                            </div>
-                                        </div>
-                            
-                            
-                                    </div>
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
-                                        </div>
-                                         <div class="minimal flex-column mx-5">
-                                            <p class="font-weight-bold">minimal t-shit</p>
-                                            <span class="text-danger"> $300.00</span>
-                                            </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="minimal flex-column mx-5">
-                                                <p class="font-weight-bold">Plates Set</p>
-                                                <span class="text-danger"> $30.00</span>
-                                                </div>
-                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="minimal flex-column mx-5">
-                                                <p class="font-weight-bold">Modern Sofa</p>
-                                                <span class="text-danger"> $800.00</span>
-                                                </div>
-                            
-                                        </div>
-                            
-                            
-                                    </div>
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
-                                        </div>
-                                        <div class="minimal flex-column mx-5">
-                                            <p class="font-weight-bold">Bed Linen</p>
-                                            <span class="text-danger"> $79.00</span>
-                                            </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div>
-                                            <img class="img-fluid" src="./public/img/products_mini/product-shoes.jpg" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="minimal flex-column mx-5">
-                                                <p class="font-weight-bold">Minimal shoes</p>
-                                                <span class="text-danger"> $60.00</span>
-                                                </div>
-                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </section>
+    <section id="section3">
+        <div class="container">
+            <h1 class="font-weight-bold text-center mb-5">Recents Products</h1>
+            <div class="row">
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="minimal flex-column mx-5">
+                            <p class="font-weight-bold">Luxury Sofa</p>
+                            <span class="text-danger"> $600.00</span>
+                        </div>
+
+                    </div>
 
 
-                            <!-- debut de la section 4 -->
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center m-4">
+                        <button class="text-white bg-danger">SALE!</button>
+                        <div class="flex-column mx-5">
+                            <p class="font-weight-bold">Leather Glaves</p>
+                            <span class="text-danger"><del class="text-secondary">$34.00</del> $27.00</span>
+                        </div>
+                    </div>
 
-        <section id="section4" class="container-fluid">
-            <div class="text-center">
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-cups.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="minimal flex-column mx-5">
+                            <p class="font-weight-bold">Colorful Bowl</p>
+                            <span class="text-danger"> $18.00</span>
+                        </div>
 
-                <h1 class="text-white">Discover Thousands Of Great Products</h1>
-                <button class="text-white p-2 bg-danger">LEARN MORE</button>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center m-4">
+                        <button class="text-white bg-danger">SALE!</button>
+                        <div class="flex-column mx-5">
+                            <p class="font-weight-bold">Women Bag</p>
+                            <span class="text-danger"><del class="text-secondary">$420.00</del> $300.00</span>
+                        </div>
+                    </div>
 
-        </section>
 
-        <!-- debut de la section 5 -->
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    </div>
+                    <div class="minimal flex-column mx-5">
+                        <p class="font-weight-bold">minimal t-shit</p>
+                        <span class="text-danger"> $300.00</span>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="minimal flex-column mx-5">
+                            <p class="font-weight-bold">Plates Set</p>
+                            <span class="text-danger"> $30.00</span>
+                        </div>
 
-         
-         <section id="section5" class="container-fluid mt-5">
-            <h1 class="text-center">Hot Fashion Products</h1>
-            <div class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="minimal flex-column mx-5">
+                            <p class="font-weight-bold">Modern Sofa</p>
+                            <span class="text-danger"> $800.00</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                    </div>
+                    <div class="minimal flex-column mx-5">
+                        <p class="font-weight-bold">Bed Linen</p>
+                        <span class="text-danger"> $79.00</span>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div>
+                        <img class="img-fluid" src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="minimal flex-column mx-5">
+                            <p class="font-weight-bold">Minimal shoes</p>
+                            <span class="text-danger"> $60.00</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- debut de la section 4 -->
+
+    <section id="section4" class="container-fluid">
+        <div class="text-center">
+
+            <h1 class="text-white">Discover Thousands Of Great Products</h1>
+            <button class="text-white p-2 bg-danger">LEARN MORE</button>
+        </div>
+
+    </section>
+
+    <!-- debut de la section 5 -->
+
+
+    <section id="section5" class="container-fluid mt-5">
+        <h1 class="text-center">Hot Fashion Products</h1>
+        <div class="container">
             <div class="row d-flex justify-content-center flex-nowrap">
                 <div class="col-2">
                     <div>
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid">
                     </div>
                     <div class="text-center">
                         <p>Luxury Sofa</p>
@@ -252,62 +308,62 @@
                 <div class="col-2">
                     <div>
                         <img src="./public/img/products_mini/product-gloves.jpg" class="img-fluid">
-                        </div>
-                        <div class="d-flex text-center">
-                            <button class="text-white text-uppercase bg-danger">sale</button>
-                            <div>
+                    </div>
+                    <div class="d-flex text-center">
+                        <button class="text-white text-uppercase bg-danger">sale</button>
+                        <div>
                             <p>Leather Glaves</p>
                             <span class="text-danger"><del>$34.00</del> $27.00</span>
-                            </div>
-                            
-                            
                         </div>
+
+
+                    </div>
                 </div>
                 <div class="col-2">
 
                     <div>
                         <img src="./public/img/products_mini/product-cups.jpg" class="img-fluid">
-                        </div>
-                        <div class="text-center">
-                            <p>Colorful Bowl</p>
-                            <span class="text-danger">$18.00</span>
-                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p>Colorful Bowl</p>
+                        <span class="text-danger">$18.00</span>
+                    </div>
                 </div>
                 <div class="col-2">
                     <div>
                         <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
-                        </div>
-                        <div class="text-center">
-                            <p>Luxury Sofa</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p>Luxury Sofa</p>
+                        <span class="text-danger">$600.00</span>
+                    </div>
                 </div>
 
                 <div class="col-2 d-none">
                     <div>
                         <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
-                        </div>
-                        <div>
-                            <p>Luxury Sofa</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
+                    </div>
+                    <div>
+                        <p>Luxury Sofa</p>
+                        <span class="text-danger">$600.00</span>
+                    </div>
                 </div>
                 <div class="col-2 d-none">
                     <div>
                         <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
-                        </div>
-                        <div>
-                            <p>Luxury Sofa</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
+                    </div>
+                    <div>
+                        <p>Luxury Sofa</p>
+                        <span class="text-danger">$600.00</span>
+                    </div>
                 </div>
                 <div class="col-md-2 col-md-offset-1 d-none">
                     <img src="./public/img/products_mini/product-tshitr.jpg" class="img-fluid">
-    
-                        <div>
-                            <p>Minimal T-shirt</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
+
+                    <div>
+                        <p>Minimal T-shirt</p>
+                        <span class="text-danger">$600.00</span>
+                    </div>
                 </div>
             </div>
             <div class="carou d-flex justify-content-center mt-5">
@@ -319,105 +375,115 @@
                 <button class="d-none"></button>
                 <button class="d-none"></button>
             </div>
-            </div>
-            
+        </div>
 
 
-        </section>
 
-        <!-- debut de la 6eme section  -->
+    </section>
 
-           
-        <section id="section6" class="mt-5 px-3">
-            <div class="row">
-                <div class="col-4">
-                    <div class=" num1 d-flex flex-column text-center p-3">
+    <!-- debut de la 6eme section  -->
+
+
+    <section id="section6" class="mt-5 px-3">
+        <div class="row">
+            <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class=" num1 d-flex flex-column text-center p-3 my-2">
                     <i class="far fa-check-circle mb-4"></i>
                     <p class="text-uppercase mb-4 text-dark">trsuted by 10,000+ customers</p>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusantium laudantium repellat id porro mollitia recusandae temporibus? Lorem ipsum dolor sit amet.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusantium
+                        laudantium repellat id porro mollitia recusandae temporibus? Lorem ipsum dolor sit amet.</p>
                     <div class="mt-5">
-                    <button class="text-uppercase bg-dark text-white">learn more</button>
+                        <button class="text-uppercase bg-dark text-white">learn more</button>
                     </div>
-                    </div>
-                    
                 </div>
-                <div class="col-4">
-                    <div class=" bg-danger d-flex flex-column text-center p-3 ">
+
+            </div>
+            <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class=" num2 bg-danger d-flex flex-column text-center p-3 my-2 ">
                     <i class="far fa-paper-plane text-white mb-4"></i>
                     <p class="text-uppercase text-white mb-4">very fast shipping</p>
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusantium laudantium repellat id porro mollitia recusandae temporibus? Lorem ipsum dolor sit amet. </p>
+                    <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                        accusantium laudantium repellat id porro mollitia recusandae temporibus? Lorem ipsum dolor sit
+                        amet. </p>
                     <div class="mt-5">
-                    <button class="text-uppercase .bg-light text-dark">learn more</button>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="num3 d-flex flex-column text-center p-3">
-                    <i class="far fa-check-circle mb-4"></i>
-                    <p class="text-uppercase mb-4">trsuted by 10,000+ customers</p>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusantium laudantium repellat id porro mollitia recusandae temporibus? Lorem ipsum dolor sit amet.</p>
-                    <div class="mt-5">
-                    <button class="text-uppercase bg-dark text-white">learn more</button>
-                    </div>
+                        <button class="text-uppercase .bg-light text-dark">learn more</button>
                     </div>
                 </div>
             </div>
-        </section>
-
-                <!-- debut du footer -->
-
-                <footer class="bg-dark">
-                    <div class="container pt-5">
-                    <div class="row">
-                        <div class="col-4">
-
-                            <h6 class="text-white text-uppercase mb-5">About us</h6 >
-                                <div class="text-secondary">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed aliquam error modi tempora eos. Doloribus cupiditate adipisci numquam amet dicta illo voluptate cumque beatae accusamus? Quo eligendi minus id consectetur repellat voluptatum reprehenderit molestiae vel, earum quos architecto vitae corporis harum.</p>
-                        </div>
-                        </div>
-                        <div class="col-4">
-                            <h6 class="text-white text-uppercase mb-5">Recents posts</h6>
-                            <div class="text-white">
-                                <p>>Hello World</p>
-                                <p>>Wonderful serenity has taken</p>
-                                <p>>In my soul and absorb its power</p>
-                                <p>>I hear the buzz of the little</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <h6 class="text-white text-uppercase mb-5">tag cloud</h6>
-                            <div>
-                                <button class="bg-dark text-secondary">business</button>
-                                <button class="bg-dark text-secondary">confidence</button>
-                                <button class="bg-dark text-secondary">gadgets</button>
-                            </div>
-                            <div>
-                                <button class="bg-dark text-secondary">identity</button>
-                                <button class="bg-dark text-secondary">logo</button>
-                                <button class="bg-dark text-secondary">photography</button>
-                            </div>
-                            <div>
-                                <button class="bg-dark text-secondary">time</button>
-                                <button class="bg-dark text-secondary">trips</button>
-                                <button class="bg-dark text-secondary">works</button>
-                            </div>
-                            <div>
-                                <button class="bg-dark text-secondary"> work space</button>
-                            </div>
-                        </div>
+            <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="num3 d-flex flex-column text-center p-3 my-2">
+                    <i class="far fa-check-circle mb-4"></i>
+                    <p class="text-uppercase mb-4">trsuted by 10,000+ customers</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusantium
+                        laudantium repellat id porro mollitia recusandae temporibus? Lorem ipsum dolor sit amet.</p>
+                    <div class="mt-5">
+                        <button class="text-uppercase bg-dark text-white">learn more</button>
                     </div>
-                </div>  
-
-                <div class="last">
-                    <p class="text-center text-uppercase text-secondary pt-3">
-                        copyright 2020 goodlayers, all right reserved
-                    </p>
                 </div>
-        
-                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- debut du footer -->
+
+    <footer class="bg-dark">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+
+                    <h6 class="text-white text-uppercase mb-5">About us</h6>
+                    <div class="text-secondary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed aliquam error modi
+                            tempora eos. Doloribus cupiditate adipisci numquam amet dicta illo voluptate cumque beatae
+                            accusamus? Quo eligendi minus id consectetur repellat voluptatum reprehenderit molestiae
+                            vel, earum quos architecto vitae corporis harum.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <h6 class="text-white text-uppercase mb-5">Recents posts</h6>
+                    <div class="text-white">
+                        <p>>Hello World</p>
+                        <p>>Wonderful serenity has taken</p>
+                        <p>>In my soul and absorb its power</p>
+                        <p>>I hear the buzz of the little</p>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <h6 class="text-white text-uppercase mb-5">tag cloud</h6>
+                    <div>
+                        <button class="bg-dark text-secondary">business</button>
+                        <button class="bg-dark text-secondary">confidence</button>
+                        <button class="bg-dark text-secondary">gadgets</button>
+                    </div>
+                    <div>
+                        <button class="bg-dark text-secondary">identity</button>
+                        <button class="bg-dark text-secondary">logo</button>
+                        <button class="bg-dark text-secondary">photography</button>
+                    </div>
+                    <div>
+                        <button class="bg-dark text-secondary">time</button>
+                        <button class="bg-dark text-secondary">trips</button>
+                        <button class="bg-dark text-secondary">works</button>
+                    </div>
+                    <div>
+                        <button class="bg-dark text-secondary"> work space</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="last">
+            <p class="text-center text-uppercase text-secondary pt-3">
+                copyright 2020 goodlayers, all right reserved
+            </p>
+        </div>
+
+    </footer>
 
     <!-- script JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <script src="./public/js/main.js"></script>
 
